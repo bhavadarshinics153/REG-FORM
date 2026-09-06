@@ -1,0 +1,281 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+}
+
+
+.container {
+    width: 560px;
+
+    text-align: center;
+}
+
+
+/* CREATE ACCOUNT */
+
+.container h1 {
+    color: black;
+
+    font-size: 55px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 6px;
+}
+
+
+/* Register to Get Started */
+
+.subtitle {
+    color: black;
+
+    font-size: 24px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Main Form Box */
+
+form {
+    width: 100%;
+
+    padding: 30px 35px;
+
+    background-color: white;
+
+    border: 1px solid black;
+
+    border-radius: 6px;
+
+    text-align: left;
+}
+
+
+/* Each Row */
+
+.input-box {
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+
+/* Labels */
+
+.input-box label {
+    width: 100px;
+
+    flex-shrink: 0;
+
+    color: black;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* Input */
+
+.input-box input {
+    width: 100%;
+
+    height: 42px;
+
+    padding: 10px 12px;
+
+    background-color: white;
+
+    color: black;
+
+    border: 1px solid black;
+
+    border-radius: 4px;
+
+   
+    font-size: 14px;
+}
+.input-content {
+    width: 100%;
+    position: relative;
+}
+
+
+/* Bio */
+
+.bio-content {
+    width: 100%;
+}
+
+
+.input-box textarea {
+    display: block;
+
+    width: 100%;
+
+    height: 105px;
+
+    padding: 10px 12px;
+
+    background-color: white;
+
+    color: black;
+
+    border: 1px solid black;
+
+    border-radius: 4px;
+
+   
+    resize: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+}
+
+
+/* Placeholder */
+
+.input-box input::placeholder,
+.input-box textarea::placeholder {
+    color: #777;
+}
+
+
+/* Click → Placeholder disappears */
+
+.input-box input:focus::placeholder,
+.input-box textarea:focus::placeholder {
+    color: transparent;
+}
+
+
+/* Focus */
+
+.input-box input:focus,
+.input-box textarea:focus {
+    border: 1px solid black;
+}
+
+
+/* Bio Counter */
+
+.bio-footer {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 5px;
+}
+
+
+#counter {
+    margin-left: auto;
+
+    color: black;
+
+    font-size: 12px;
+}
+
+
+/* Error */
+
+.error {
+    display: block;
+    margin-top: 5px;
+    color: black;
+    font-size: 14px;
+}
+
+/* Submit Button - INSIDE BOX */
+
+#submitBtn {
+    display: block;
+
+    width: 500px;
+
+    height: 44px;
+
+    margin: 5px auto;
+
+    background-color: black;
+
+    color: white;
+
+
+
+    border-radius: 4px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* Submit Hover */
+
+#submitBtn:hover {
+    background-color: #222;
+}
+
+
+/* Disabled */
+
+#submitBtn:disabled {
+    background-color: black;
+
+    color: white;
+
+    cursor: not-allowed;
+}
+
+
+@media (max-width: 900px) {
+
+    .container {
+        width: 90%;
+    }
+
+    form {
+        padding: 20px 20px;
+    }
+
+    .container h1 {
+        font-size: 40px;
+    }
+
+    .input-box label {
+        width: 90px;
+    }
+
+    .input-box input,
+    .input-box textarea {
+        font-size: 14px;
+    }
+
+    #submitBtn {
+        width: 380px;
+    }
+}

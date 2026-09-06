@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        
+
+        <h1>CREATE ACCOUNT</h1>
+
+        <p class="subtitle">Register to Get Started</p>
+
+
+        <!-- Form Box -->
+
+        <form id="registrationForm">
+
+            <div class="input-box">
+
+                <label>Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                >
+
+                <small id="nameError" class="error"></small>
+
+            </div>
+
+
+            <div class="input-box">
+
+    <label>Email</label>
+
+    <div class="input-content">
+
+        <small id="emailError" class="error"></small>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+        >
+
+    </div>
+
+</div>
+
+        <div class="input-box">
+
+    <label>Password</label>
+
+    <div class="input-content">
+
+        <small id="passwordError" class="error"></small>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+        >
+
+    </div>
+
+</div>
+
+
+            <div class="input-box bio-box">
+
+                <label>Bio</label>
+
+                <div class="bio-content">
+
+                    <textarea
+                        id="bio"
+                        maxlength="200"
+                        placeholder="Tell us about yourself..."
+                    ></textarea>
+
+                    <div class="bio-footer">
+                        
+
+                        <small id="bioError" class="error"></small>
+
+                        <span id="counter">
+                            0 / 200 characters
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Submit INSIDE the box -->
+
+            <button type="submit" id="submitBtn">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
